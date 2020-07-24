@@ -44,3 +44,25 @@ const pets = [
         "typeOfPet": "Cat"
       }
 ]
+
+const printToDom = (divId, stringToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML = stringToPrint;
+}
+
+const createPetCards = () => {
+    let domString = ''
+
+    for (let i = 0; i < pets.length; i++) {
+        domString += `<div class="pet-info">`;
+        domString +=    `<div class="pet-name">${pets[i].name}</div>`
+        domString +=    `<img src=${pets[i].image}>`
+        domString +=    `<div class="pet-color">${pets[i].color}</div>`
+        domString +=    `<div class="pet-skill">${pets[i].specialSkill}</div>`
+        domString +=    `<div class="pet-type">${pets[i].typeOfPet}</div>`
+        domString += `</div>`    
+        }
+        printToDom('adoptMe', domString);
+    } 
+
+    createPetCards();
