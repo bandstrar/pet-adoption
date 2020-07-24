@@ -10,17 +10,18 @@ body {
 #adoptMe {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .pet-info {
     display: flex;
     flex-flow: column nowrap;
-    width: 30%;
+    width: 25%;
     margin: 20px;
     border: solid #FF5252 1px;
     border-radius: 2px;
     background-color: #CFD8DC;
+    height: 350px;
 }
 
 .pet-name {
@@ -36,7 +37,7 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     width: 50%;
-    height: 60%;
+    height: 50%;
     border: solid 1px #FF5252;
     border-radius: 5px;
 }
@@ -44,11 +45,13 @@ body {
 .pet-color {
     text-align: center;
     color: #212121;
+    margin: 10px 0;
 }
 
 .pet-skill {
     text-align: center;
     color: #212121;
+    margin: 10px 0;
 }
 
 .pet-cat {
@@ -67,4 +70,6 @@ body {
     text-align: center;
     background-color: #ffffcc;
     color: orange;
+    height: 40px;
+    font-size: 25px;
 }
