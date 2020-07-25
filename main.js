@@ -54,19 +54,44 @@ const createPetCards = () => {
     let domString = ''
 
     for (let i = 0; i < pets.length; i++) {
-        domString += `<div class="pet-info">`;
+      if (pets[i].typeOfPet === "Cat") {
+        domString += `<div id="petCat">`;
         domString +=    `<div class="pet-name">${pets[i].name}</div>`
-        domString +=    `<img src=${pets[i].image}>`
+        domString +=    `<img class="pet-img" src=${pets[i].image}>`
         domString +=    `<div class="pet-color">${pets[i].color}</div>`
         domString +=    `<div class="pet-skill">${pets[i].specialSkill}</div>`
-        if (pets[i].typeOfPet === "Cat") {
-            domString +=    `<div class="pet-cat">${pets[i].typeOfPet}</div>`} else if (pets[i].typeOfPet === "Dog") {
-            domString +=    `<div class="pet-dog">${pets[i].typeOfPet}</div>`} else {
-            domString +=    `<div class="pet-snake">${pets[i].typeOfPet}</div>`
-            }
+        domString +=    `<div class="pet-cat">${pets[i].typeOfPet}</div>`
         domString += `</div>`    
+        } else if (pets[i].typeOfPet === "Dog") {
+        domString += `<div id="petDog">`;
+        domString +=    `<div class="pet-name">${pets[i].name}</div>`
+        domString +=    `<img class="pet-img" src=${pets[i].image}>`
+        domString +=    `<div class="pet-color">${pets[i].color}</div>`
+        domString +=    `<div class="pet-skill">${pets[i].specialSkill}</div>`
+        domString +=    `<div class="pet-dog">${pets[i].typeOfPet}</div>`
+        domString += `</div>`
+        } else if (pets[i].typeOfPet === "Snake") {
+          domString += `<div id="petSnake">`;
+          domString +=    `<div class="pet-name">${pets[i].name}</div>`
+          domString +=    `<img class="pet-img" src=${pets[i].image}>`
+          domString +=    `<div class="pet-color">${pets[i].color}</div>`
+          domString +=    `<div class="pet-skill">${pets[i].specialSkill}</div>`
+          domString +=    `<div class="pet-snake">${pets[i].typeOfPet}</div>`
+          domString += `</div>`
         }
+      }
         printToDom('adoptMe', domString);
     } 
 
-    createPetCards();
+    const init = () => {
+      createPetCards();
+    }
+    
+    init();
+
+    // const dogHide = () => {
+    //   document.getElementById("petDog").toggle();
+    // }
+
+    // document.getElementById("dogBtn").addEventListener("click", dogHide)
+
