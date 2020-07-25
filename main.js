@@ -26,7 +26,7 @@ const pets = [
         "image": "./images/cornsnake.jpg",
         "name": "Kaa",
         "color": "Orange",
-        "specialSkill": "Can hypnotize wolf cubs",
+        "specialSkill": "Can hypnotize man cubs",
         "typeOfPet": "Snake"
       },
     {
@@ -59,7 +59,11 @@ const createPetCards = () => {
         domString +=    `<img src=${pets[i].image}>`
         domString +=    `<div class="pet-color">${pets[i].color}</div>`
         domString +=    `<div class="pet-skill">${pets[i].specialSkill}</div>`
-        domString +=    `<div class="pet-type">${pets[i].typeOfPet}</div>`
+        if (pets[i].typeOfPet === "Cat") {
+            domString +=    `<div class="pet-cat">${pets[i].typeOfPet}</div>`} else if (pets[i].typeOfPet === "Dog") {
+            domString +=    `<div class="pet-dog">${pets[i].typeOfPet}</div>`} else {
+            domString +=    `<div class="pet-snake">${pets[i].typeOfPet}</div>`
+            }
         domString += `</div>`    
         }
         printToDom('adoptMe', domString);

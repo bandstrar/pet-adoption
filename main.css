@@ -1,3 +1,83 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
 body {
-    background-color: hotpink;
+    background-color: #455A64;
+}
+
+#adoptMe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.pet-info {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25%;
+    margin: 20px;
+    border: solid #FF5252 1px;
+    border-radius: 2px;
+    background-color: #CFD8DC;
+    height: 350px;
+}
+
+.pet-name {
+    text-align: center;
+    background-color: #BDBDBD;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Merienda One', cursive;
+    color: darkslateblue;
+}
+
+.pet-info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border: solid 1px #FF5252;
+    border-radius: 5px;
+}
+
+.pet-color {
+    text-align: center;
+    color: #212121;
+    margin: 5px 0;
+}
+
+.pet-skill {
+    text-align: center;
+    color: #212121;
+    margin: 5px 0;
+}
+
+.pet-cat {
+    text-align: center;
+    background-color: lightblue;
+    color: blue;
+    height: 36px;
+    font-size: 25px;
+}
+
+.pet-dog {
+    text-align: center;
+    background-color: #c6ecc6;
+    color: green;
+    height: 36px;
+    font-size: 25px;
+}
+
+.pet-snake {
+    text-align: center;
+    background-color: #ffffcc;
+    color: orange;
+    height: 36px;
+    font-size: 25px;
 }
