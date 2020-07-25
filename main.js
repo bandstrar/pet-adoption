@@ -55,7 +55,7 @@ const createPetCards = () => {
 
     for (let i = 0; i < pets.length; i++) {
       if (pets[i].typeOfPet === "Cat") {
-        domString += `<div id="petCat">`;
+        domString += `<div class="pet-cats">`;
         domString +=    `<div class="pet-name">${pets[i].name}</div>`
         domString +=    `<img class="pet-img" src=${pets[i].image}>`
         domString +=    `<div class="pet-color">${pets[i].color}</div>`
@@ -63,7 +63,7 @@ const createPetCards = () => {
         domString +=    `<div class="pet-cat">${pets[i].typeOfPet}</div>`
         domString += `</div>`    
         } else if (pets[i].typeOfPet === "Dog") {
-        domString += `<div id="petDog">`;
+        domString += `<div class="pet-dogs">`;
         domString +=    `<div class="pet-name">${pets[i].name}</div>`
         domString +=    `<img class="pet-img" src=${pets[i].image}>`
         domString +=    `<div class="pet-color">${pets[i].color}</div>`
@@ -71,7 +71,7 @@ const createPetCards = () => {
         domString +=    `<div class="pet-dog">${pets[i].typeOfPet}</div>`
         domString += `</div>`
         } else if (pets[i].typeOfPet === "Snake") {
-          domString += `<div id="petSnake">`;
+          domString += `<div class="pet-snakes">`;
           domString +=    `<div class="pet-name">${pets[i].name}</div>`
           domString +=    `<img class="pet-img" src=${pets[i].image}>`
           domString +=    `<div class="pet-color">${pets[i].color}</div>`
@@ -89,9 +89,41 @@ const createPetCards = () => {
     
     init();
 
-    // const dogHide = () => {
-    //   document.getElementById("petDog").toggle();
-    // }
+    const dogHide = () => {
+      let elements = document.getElementsByClassName("pet-dogs")
+      for (let i = 0; i < elements.length; i++){
+        if (elements[i].style.display === "none") {
+          elements[i].style.display = "flex";
+        } else {
+          elements[i].style.display = "none";
+        }
+      }
+    }
 
-    // document.getElementById("dogBtn").addEventListener("click", dogHide)
+    const catHide = () => {
+      let elements = document.getElementsByClassName("pet-cats")
+      for (let i = 0; i < elements.length; i++){
+        if (elements[i].style.display === "none") {
+          elements[i].style.display = "flex";
+        } else {
+          elements[i].style.display = "none";
+        }
+      }
+    }
 
+    const snakeHide = () => {
+      let elements = document.getElementsByClassName("pet-snakes")
+      for (let i = 0; i < elements.length; i++){
+        if (elements[i].style.display === "none") {
+          elements[i].style.display = "flex";
+        } else {
+          elements[i].style.display = "none";
+        }
+      }
+    }
+
+    document.getElementById("dogBtn").addEventListener("click", dogHide)
+
+    document.getElementById("catBtn").addEventListener("click", catHide)
+
+    document.getElementById("snakeBtn").addEventListener("click", snakeHide)

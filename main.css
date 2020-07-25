@@ -45,7 +45,7 @@ body {
     justify-content: space-around;
 }
 
-#petCat {
+.pet-cats {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
@@ -55,7 +55,7 @@ body {
     background-color: #CFD8DC;
     height: 350px;
 }
-#petDog {
+.pet-dogs {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
@@ -65,7 +65,7 @@ body {
     background-color: #CFD8DC;
     height: 350px;
 }
-#petSnake {
+.pet-snakes {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
