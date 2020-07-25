@@ -27,6 +27,10 @@ body {
 .pet-name {
     text-align: center;
     background-color: #BDBDBD;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Merienda One', cursive;
+    color: darkslateblue;
 }
 
 .pet-info img {
@@ -45,31 +49,35 @@ body {
 .pet-color {
     text-align: center;
     color: #212121;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .pet-skill {
     text-align: center;
     color: #212121;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .pet-cat {
     text-align: center;
     background-color: lightblue;
     color: blue;
+    height: 36px;
+    font-size: 25px;
 }
 
 .pet-dog {
     text-align: center;
     background-color: #c6ecc6;
     color: green;
+    height: 36px;
+    font-size: 25px;
 }
 
 .pet-snake {
     text-align: center;
     background-color: #ffffcc;
     color: orange;
-    height: 40px;
+    height: 36px;
     font-size: 25px;
 }
