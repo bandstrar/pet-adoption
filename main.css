@@ -7,13 +7,65 @@ body {
     background-color: #455A64;
 }
 
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+#dogBtn {
+    background-color: green;
+    color: white;
+    width: 60px;
+    height: 30px;
+}
+
+#catBtn {
+    background-color: blue;
+    color: white;
+    width: 60px;
+    height: 30px;
+}
+
+#snakeBtn {
+    background-color: orange;
+    color: white;
+    width: 60px;
+    height: 30px;
+}
+
+/* CARDS */
 #adoptMe {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.pet-info {
+.pet-cats {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25%;
+    margin: 20px;
+    border: solid #FF5252 1px;
+    border-radius: 2px;
+    background-color: #CFD8DC;
+    height: 350px;
+}
+.pet-dogs {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25%;
+    margin: 20px;
+    border: solid #FF5252 1px;
+    border-radius: 2px;
+    background-color: #CFD8DC;
+    height: 350px;
+}
+.pet-snakes {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
@@ -33,7 +85,7 @@ body {
     color: darkslateblue;
 }
 
-.pet-info img {
+.pet-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -81,3 +133,4 @@ body {
     height: 36px;
     font-size: 25px;
 }
+
