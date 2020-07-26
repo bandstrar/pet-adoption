@@ -92,38 +92,54 @@ const createPetCards = () => {
     const dogHide = () => {
       let elements = document.getElementsByClassName("pet-dogs")
       for (let i = 0; i < elements.length; i++){
-        if (elements[i].style.display === "none") {
-          elements[i].style.display = "flex";
-        } else {
           elements[i].style.display = "none";
-        }
       }
     }
 
     const catHide = () => {
       let elements = document.getElementsByClassName("pet-cats")
       for (let i = 0; i < elements.length; i++){
-        if (elements[i].style.display === "none") {
-          elements[i].style.display = "flex";
-        } else {
-          elements[i].style.display = "none";
-        }
+        elements[i].style.display = "none";
       }
     }
 
     const snakeHide = () => {
       let elements = document.getElementsByClassName("pet-snakes")
       for (let i = 0; i < elements.length; i++){
-        if (elements[i].style.display === "none") {
-          elements[i].style.display = "flex";
-        } else {
           elements[i].style.display = "none";
-        }
+      }
+    }
+    const dogShow = () => {
+      let elements = document.getElementsByClassName("pet-dogs")
+      for (let i = 0; i < elements.length; i++){
+          elements[i].style.display = "flex";
+      }
+    }
+    const catShow = () => {
+      let elements = document.getElementsByClassName("pet-cats")
+      for (let i = 0; i < elements.length; i++){
+          elements[i].style.display = "flex";
+      }
+    }
+    const snakeShow = () => {
+      let elements = document.getElementsByClassName("pet-snakes")
+      for (let i = 0; i < elements.length; i++){
+          elements[i].style.display = "flex";
       }
     }
 
-    document.getElementById("dogBtn").addEventListener("click", dogHide)
+    document.getElementById("dogBtn").addEventListener("click", catHide)
+    document.getElementById("dogBtn").addEventListener("click", snakeHide)
+    document.getElementById("dogBtn").addEventListener("click", dogShow)
 
-    document.getElementById("catBtn").addEventListener("click", catHide)
+    document.getElementById("catBtn").addEventListener("click", dogHide)
+    document.getElementById("catBtn").addEventListener("click", snakeHide)
+    document.getElementById("catBtn").addEventListener("click", catShow)
 
-    document.getElementById("snakeBtn").addEventListener("click", snakeHide)
+    document.getElementById("snakeBtn").addEventListener("click", dogHide)
+    document.getElementById("snakeBtn").addEventListener("click", catHide)
+    document.getElementById("snakeBtn").addEventListener("click", snakeShow)
+
+    document.getElementById("allBtn").addEventListener("click", dogShow)
+    document.getElementById("allBtn").addEventListener("click", catShow)
+    document.getElementById("allBtn").addEventListener("click", snakeShow)
