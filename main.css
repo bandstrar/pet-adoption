@@ -45,6 +45,30 @@ body {
     justify-content: space-around;
 }
 
+@media (max-width: 1111px) {
+    .pet-cats {
+        flex: 2 35%
+    }
+    .pet-dogs {
+        flex: 2 35%
+    }
+    .pet-snakes {
+        flex: 2 35%
+    }
+}
+
+@media (max-width: 692px) {
+    .pet-cats {
+        flex: 1 46%
+    }
+    .pet-dogs {
+        flex: 1 46%
+    }
+    .pet-snakes {
+        flex: 1 46%
+    }
+}
+
 .pet-cats {
     display: flex;
     flex-flow: column nowrap;
