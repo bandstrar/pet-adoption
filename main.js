@@ -72,12 +72,12 @@ const createPetCards = (petArray) => {
     let domString = ''
 
     for (let i = 0; i < petArray.length; i++) {
-        domString += `<div class="pet-${petsArray[i].typeOfPet}s" id="${i}">
-                      <div class="pet-name">${petsArray[i].name}</div>
-                      <img class="pet-img" src=${petsArray[i].image}>
-                      <div class="pet-color">${petsArray[i].color}</div>
-                      <div class="pet-skill">${petsArray[i].specialSkill}</div>
-                      <div class="pet${petsArray[i].typeOfPet}">${petsArray[i].typeOfPet}</div>
+        domString += `<div class="pet-${petArray[i].typeOfPet}s" id="${i}">
+                      <div class="pet-name">${petArray[i].name}</div>
+                      <img class="pet-img" src=${petArray[i].image}>
+                      <div class="pet-color">${petArray[i].color}</div>
+                      <div class="pet-skill">${petArray[i].specialSkill}</div>
+                      <div class="pet${petArray[i].typeOfPet}">${petArray[i].typeOfPet}</div>
                       </div>` 
       }
         printToDom('adoptMe', domString);
