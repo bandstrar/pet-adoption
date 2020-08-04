@@ -10,34 +10,34 @@ body {
 
 /* BUTTONS */
 
-.btn-container {
+#btnContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 10px 0;
 }
 
-#dogBtn {
+#Dog {
     background-color: green;
     color: white;
     width: 60px;
     height: 30px;
 }
 
-#catBtn {
+#Cat {
     background-color: blue;
     color: white;
     width: 60px;
     height: 30px;
 }
 
-#snakeBtn {
+#Snake {
     background-color: orange;
     color: white;
     width: 60px;
     height: 30px;
 }
-#allBtn {
+#All {
     background-color: red;
     color: white;
     width: 60px;
@@ -52,30 +52,30 @@ body {
 }
 
 @media (max-width: 1111px) {
-    .pet-cats {
+    .pet-Cats {
         flex: 2 35%
     }
-    .pet-dogs {
+    .pet-Dogs {
         flex: 2 35%
     }
-    .pet-snakes {
+    .pet-Snakes {
         flex: 2 35%
     }
 }
 
 @media (max-width: 692px) {
-    .pet-cats {
+    .pet-Cats {
         flex: 1 46%
     }
-    .pet-dogs {
+    .pet-Dogs {
         flex: 1 46%
     }
-    .pet-snakes {
+    .pet-Snakes {
         flex: 1 46%
     }
 }
 
-.pet-cats {
+.pet-Cats {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
@@ -85,7 +85,7 @@ body {
     background-color: #CFD8DC;
     height: 350px;
 }
-.pet-dogs {
+.pet-Dogs {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
@@ -95,7 +95,7 @@ body {
     background-color: #CFD8DC;
     height: 350px;
 }
-.pet-snakes {
+.pet-Snakes {
     display: flex;
     flex-flow: column nowrap;
     width: 25%;
@@ -140,7 +140,7 @@ body {
     margin: 5px 0;
 }
 
-.pet-cat {
+.petCat {
     text-align: center;
     background-color: lightblue;
     color: blue;
@@ -148,7 +148,7 @@ body {
     font-size: 25px;
 }
 
-.pet-dog {
+.petDog {
     text-align: center;
     background-color: #c6ecc6;
     color: green;
@@ -156,7 +156,7 @@ body {
     font-size: 25px;
 }
 
-.pet-snake {
+.petSnake {
     text-align: center;
     background-color: #ffffcc;
     color: orange;
