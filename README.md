@@ -4,6 +4,6 @@
 
 A single-page site to show and filter animals up for adoption.
 
-![image](./images/screenshot.jpg)
+![image](./images/PetAdoption.gif)
 
 This app uses Javascript to filter animals up for adoption based on the type of animal and also uses Javascript to print the adoption cards to the DOM.
